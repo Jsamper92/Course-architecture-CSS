@@ -1,19 +1,18 @@
 {
-  "name": "curso_arquitectura_css",
+  "name": "course-architecture-css",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "sassLintConfig":"sas.yml",
+  "description": "Course to learn how create architecture ITCSS with BEM",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:sass": "sass-lint -c .sas.yml -v -q"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jsamper92/course-architecture-CSS.git"
+  },
+  "author": "Javier Samper Arias",
   "license": "ISC",
-  "dependencies": {
-    "mkdirp": "^1.0.4",
-    "node-sass": "^4.14.0",
-    "sass": "^1.26.5",
-    "sass-lint": "^1.13.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Jsamper92/course-architecture-CSS/issues"
+  },
+  "homepage": "https://github.com/Jsamper92/course-architecture-CSS#readme"
 }
