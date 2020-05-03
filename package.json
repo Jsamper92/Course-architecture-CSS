@@ -1,0 +1,19 @@
+{
+  "name": "curso_arquitectura_css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "sassLintConfig":"sas.yml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:sass": "sass-lint -c .sas.yml -v -q"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "node-sass": "^4.14.0",
+    "sass": "^1.26.5",
+    "sass-lint": "^1.13.1"
+  }
+}
