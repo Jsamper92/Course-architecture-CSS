@@ -1,0 +1,19 @@
+{
+  "name": "course-architecture-css",
+  "version": "1.0.0",
+  "description": "Course to learn how create architecture ITCSS with BEM",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": " http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jsamper92/course-architecture-CSS.git"
+  },
+  "author": "Javier Samper Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jsamper92/course-architecture-CSS/issues"
+  },
+  "homepage": "https://github.com/Jsamper92/course-architecture-CSS#readme"
+}
