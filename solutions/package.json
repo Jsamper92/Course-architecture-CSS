@@ -4,7 +4,8 @@
   "description": "Course to learn how create architecture ITCSS with BEM",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "http-server"
+    "build": "http-server",
+    "build:sass": "sass --watch --style=compressed sass/sass/main.scss:assets/styles/main.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jsamper92/course-architecture-CSS/issues"
   },
-  "homepage": "https://github.com/Jsamper92/course-architecture-CSS#readme"
+  "homepage": "https://github.com/Jsamper92/course-architecture-CSS#readme",
+  "dependencies": {
+    "sass": "^1.26.5"
+  }
 }

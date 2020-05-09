@@ -1,0 +1,38 @@
+.card {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  background-color: #fafafa;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transition: all 0.35s;
+    transform: translate3d(0, -5px, 0);
+  }
+
+  &__subtitle{
+    font-family: 'barlow-italic', sans-serif;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: cover;
+    background-color: #4426a8;
+    background-position: center top;
+  }
+
+  &__content{
+    display: block;
+    position: relative;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+}
