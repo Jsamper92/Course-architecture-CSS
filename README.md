@@ -23,7 +23,7 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
 
 ## Ejercicio 3
 1. Analiza tu arquitectura y crea variables SASS para hacer configurable el proyecto. Prueba a cambiar el tamaño a los textos para comprobarlo.
-2. Crea un mixin de fuentes para con cada `@include` generes una nueva. _Reto:_ Hazlo por medio de un bucle
+2. Crea un mixin de fuentes para que con cada `@include`, generes una nueva. _Reto:_ Hazlo por medio de un bucle
 3. Dada la siguiente lista de iconos, ubicala donde creas y genera tantas clases como nombres tenga la lista donde corresponda.
 ~~~
   first-page: "\e92d",
