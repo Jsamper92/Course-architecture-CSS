@@ -1,6 +1,6 @@
 
 /*
-    @description: Objeto de configuración de la grid
+    @description: Bucle de creación de la grid
 
     @param col: número de columnas
     @param gutter: margen lateral de cada columna
@@ -8,12 +8,12 @@
 */
 
 
-@each $breakpoint, $break in $breakpoints {
+ @each $breakpoint, $break in $breakpoints {
+
 	@media only screen and (min-width: $break) {
-		@for $i from 1 through 12 {
+		@for $i from 1 through map-get($map: $grid, $key: "col") {
 			$valor: unquote((100 / 12 * $i) + '%');
 			.col-#{$breakpoint}-#{$i} {
-				padding: 0 12px;
 				box-sizing: border-box;
 				flex: 0 0 $valor;
 				min-width: $valor;
@@ -22,3 +22,4 @@
 		}
 	}
 }
+ 

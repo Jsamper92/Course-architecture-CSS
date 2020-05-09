@@ -1,12 +1,13 @@
+@import '../settings/typography';
 h1{
-    font-size: 24px;
+    font-size: $h1-font-size;
 }
 
 h3{
-    font-size: 19px;
+    font-size: $h3-font-size;
 }
 
 h4{
-    font-size: 17px;
+    font-size: $h4-font-size;
     text-decoration: underline;
 }
