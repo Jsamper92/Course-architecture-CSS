@@ -23,7 +23,7 @@ function compileSass(options) {
   );
 
   /**
-   * Por medio de la estructura de controlamos que existe el repositorio de destino y compila el archivo, en caso de no existir la carpeta dist
+   * Por medio del if, controlamos que exista el repositorio de destino y compila el archivo, en caso de no existir la carpeta dist
    * hace ambas cosas
    */
   path = __dirname + "/../dist/";
