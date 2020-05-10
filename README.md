@@ -1,18 +1,18 @@
-# course-architecture-CSS.
+# course-architecture-CSS
 
 El curso tiene como finalidad aprender los conocimientos necesarios para montar una arquitectura CSS escalable y mantenible, siguiendo 
 la metodología [BEM](http://getbem.com/) para la nomenclatura de clases e [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) para la generación de una estructura de archivos css, que nos permita controlar la especifidad de manera controlada. Por otro lado, nos sumergiremos en el preprocesador [SASS](https://sass-lang.com/) con herramientas que nos permita extender las utilidades que a dia de hoy, CSS no nos facilita.
  
 ## Configuración 
-1. Ejecutaremos en primer lugar `npm init` para instalar futuras dependencias que necesitaremos más adelante.
+1. Ejecutaremos en primer lugar `npm init` para instalar futuras dependencias que necesitaremos más adelante
 2. Precisaremos de un servidor para levantar el proyecto, en este caso usaremos [http-server](https://www.npmjs.com/package/http-server),   instalando en el package.json lanzando el comando `npm i -g http-server`
 3. Una vez hecho esto, crearemos un script en el package.json para lanzar `http-server`
 
 A continuación, detallaremos el enunciado de los ejercicios que nos acompañaran a lo largo del curso. Todos y cada uno de estos, contaran con una carpeta llamada _solutions/_ con la solución del mismo. Cada ejercicio partira de la solución del anterior.
 
 ## Ejercicio 1
-1. Dada la estructura base, analizar el archivo _index.html_ y migrar la nomenclatura bajo la metodología BEM, clonando estas nuevas clases en el archivo _assets/styles/style.css_.
-2. Una vez hecho esto comprobar el visual.
+1. Dada la estructura base, analizar el archivo _index.html_ y migrar la nomenclatura bajo la metodología BEM, clonando estas nuevas clases en el archivo _assets/styles/style.css_
+2. Una vez hecho esto comprobar el visual
 
 ## Ejercicio 2
 Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura ITCSS. Lo haremos usando nomenclatura SASS y empezaremos a jugar con la compilación.
@@ -22,7 +22,7 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
 4. Comprobamos que no haya cambiado nada en el visual
 
 ## Ejercicio 3
-1. Analiza tu arquitectura y crea variables SASS para hacer configurable el proyecto. Prueba a cambiar el tamaño a los textos para comprobarlo.
+1. Analiza tu arquitectura y crea variables SASS para hacer configurable el proyecto. Prueba a cambiar el tamaño a los textos para comprobarlo
 2. Crea un mixin de fuentes para que con cada `@include`, generes una nueva. _Reto:_ Hazlo por medio de un bucle
 3. Dada la siguiente lista de iconos, ubicala donde creas y genera tantas clases como nombres tenga la lista donde corresponda.
 ~~~
@@ -95,7 +95,7 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
     }...
 ~~~
 **_BONUS:_** Crea una grid configurable teniendo en cuenta el número,espaciado entre columnas y ancho de cada una. A continuación, haz un bucle para que te genere tantas clases como columnas tenga la grid, además de tener en cuenta los puntos de corte. PD: Si modifico el número de columnas, el número de clases generadas tendran que ser igual a esta. El resultado deberia ser el siguiente:
-~~~~
+~~~
 @media only screen and (min-width: 0) {
   .col-sm-1 {
     padding: 0 12px;
@@ -125,4 +125,9 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
     max-width: 8.3333333333%;
   }...
 }
+~~~
 
+### Ejercicio 4
+1. Instala la depedencia `npm i sass-lint`
+2. Crea el archivo de configuración para poder hacer el lintado a tu sass, y añade alguna [regla](https://github.com/sasstools/sass-lint/tree/master/docs/rules) para comprobarlo
+3. Crea un nuevo script para comprobar el lintado de tu archivos, debes excluir todos los archivos de _node_modules_

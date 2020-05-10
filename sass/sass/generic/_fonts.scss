@@ -1,15 +1,20 @@
-@font-face {
-  font-family: barlow-regular;
-  font-display: auto;
-  src: url("/sass/fonts/Barlow-Regular.ttf");
-  font-style: normal;
-  font-weight: 500;
+@import '../settings/typography';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: barlow-italic;
-  font-display: auto;
-  src: url("/sass/fonts/Barlow-Italic.ttf");
-  font-style: normal;
-  font-weight: 500;
+@mixin font-face($name, $file, $weight:500) {
+  @font-face {
+    font-family: $name;
+    font-display: auto;
+    src: url($font-path + $file);
+    font-style: normal;
+    font-weight: $weight;
+  }
+}
+
+@each $name, $file in $fonts{
+  @include font-face($name,$file);
 }

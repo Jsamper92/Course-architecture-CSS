@@ -1,3 +1,5 @@
+@import "../settings/settings.scss";
+
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: "font-icomoon" !important;
@@ -11,3 +13,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+ @each $key, $value in $icons {
+  .icon-#{$key}::before {
+    content: $value;
+  }
+} 
+

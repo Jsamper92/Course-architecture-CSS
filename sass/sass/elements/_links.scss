@@ -1,7 +1,9 @@
+@import '../settings/typography';
 .e-link{
     outline: none;
     color: #fff;
-    font-size: 14px;
+    font-family: font-regular;
+    font-size: $font-size-link;
     padding: 0 15px;
     transition: 0.3s;
     text-decoration: none;
