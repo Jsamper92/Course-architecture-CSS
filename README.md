@@ -1,4 +1,4 @@
-# course-architecture-CSS
+# Course-architecture-CSS
 
 El curso tiene como finalidad aprender los conocimientos necesarios para montar una arquitectura CSS escalable y mantenible, siguiendo 
 la metodología [BEM](http://getbem.com/) para la nomenclatura de clases e [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) para la generación de una estructura de archivos css, que nos permita controlar la especifidad de manera controlada. Por otro lado, nos sumergiremos en el preprocesador [SASS](https://sass-lang.com/) con herramientas que nos permita extender las utilidades que a dia de hoy, CSS no nos facilita.
