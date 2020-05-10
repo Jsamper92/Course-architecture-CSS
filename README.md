@@ -135,3 +135,8 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
 ### Ejercicio 5
 1. Cambia las variables sass por [custom properties](https://drafts.csswg.org/css-variables/#defining-variables)
 2. Comprueba que al cambiar el valor de estas se hacen los cambios pertinentes
+
+### Ejercicio 6
+1. Crea un botón dentro del Shadow DOM
+2. Insertale la misma clase que el botón que tenemos en el proyecto con estilos distintos
+3. Aplicale un evento click que devuelva por medio de un alert el nombre de la clase del elemento padre
