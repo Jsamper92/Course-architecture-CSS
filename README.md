@@ -131,3 +131,7 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
 1. Instala la depedencia `npm i sass-lint`
 2. Crea el archivo de configuración para poder hacer el lintado a tu sass, y añade alguna [regla](https://github.com/sasstools/sass-lint/tree/master/docs/rules) para comprobarlo
 3. Crea un nuevo script para comprobar el lintado de tu archivos, debes excluir todos los archivos de _node_modules_
+
+### Ejercicio 5
+1. Cambia las variables por [custom properties](https://drafts.csswg.org/css-variables/#defining-variables)
+2. Comprueba que al cambiar el valor de estas se hacen los cambios pertinentes

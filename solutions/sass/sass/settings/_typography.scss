@@ -1,31 +1,22 @@
-$font-path: '/sass/fonts/';
+:root {
+  --h1-font-size: 29px;
+  --h3-font-size: 19px;
+  --h4-font-size: 17px;
+  --font-path: "/sass/fonts/";
+  --font-default: sans-serif;
+  --font-family-heading: font-regular;
+  --font-size-link: 15px;
+}
+
+$font-path: "/sass/fonts/";
 
 $font-default: sans-serif;
 
-$fonts:(
-    font-regular: 'barlow-regular.ttf',
-    font-italic: 'barlow-italic.ttf',
-    font-icomoon: 'icomoon.ttf'  
+$fonts: (
+  font-regular: "barlow-regular.ttf",
+  font-italic: "barlow-italic.ttf",
+  font-icomoon: "icomoon.ttf",
 );
 
-$font-family-heading: font-regular;
-
-// Font Size
-
-$font-size-xs:10px;
-$font-size-md:13px;
-$font-size-lg:16px;
 
 
-// Heading
-
-$h1-font-size:24px;
-
-$h3-font-size:19px;
-
-$h4-font-size:17px;
-
-
-// link
-
-$font-size-link: 14px;

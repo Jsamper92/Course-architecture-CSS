@@ -2,10 +2,12 @@
   "name": "course-architecture-css",
   "version": "1.0.0",
   "description": "Course to learn how create architecture ITCSS with BEM",
+  "sasslintConfig": "sass-lint.yml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "http-server",
-    "build:sass": "sass --watch --style=expanded sass/sass/main.scss:assets/styles/main.css"
+    "build:sass": "sass --watch --style=expanded sass/sass/main.scss:assets/styles/main.css",
+    "lint:sass": "sass-lint -c sass-lint.yml -v -q"
   },
   "repository": {
     "type": "git",
