@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "http-server",
     "build:sass": "sass --watch --style=expanded sass/sass/main.scss:assets/styles/main.css",
-    "lint:sass": "sass-lint -c sass-lint.yml -v -q"
+    "lint:sass": "sass-lint -c ./sass-lint.yml -v -q"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Jsamper92/course-architecture-CSS#readme",
   "dependencies": {
-    "sass": "^1.26.5"
+    "sass": "^1.26.5",
+    "sass-lint": "^1.13.1"
   }
 }
