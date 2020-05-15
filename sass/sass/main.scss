@@ -20,3 +20,14 @@ body {
   font-family: font-regular;
   background: $bg-content-color;
 }
+
+
+@mixin root-prop($prop: null, $value: null) {
+	@if ($prop and $value) {
+		#{$prop}: $value;
+	}
+}
+
+:root {
+	@include root-prop(--root-prop, #000000);
+}
