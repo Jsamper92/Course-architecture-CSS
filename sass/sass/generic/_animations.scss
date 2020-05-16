@@ -1,0 +1,15 @@
+@mixin keyframes($animations) {
+    @each $animation,$content in $animations{
+      @keyframes #{$animation} {
+      @each $percentage, $value in $content {
+        $percent: quote($string: $percentage + '%'); 
+        #{$percent} {
+          @each $property,$content in $value{
+            #{$property}:$content
+          }
+        }
+      }
+    }
+    }
+  }
+  @include keyframes($animations);

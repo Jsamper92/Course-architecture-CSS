@@ -1,16 +1,16 @@
-@import 'settings/settings.scss';
+@import "settings/settings.scss";
 
-@import 'tools/tools.scss';
+@import "tools/tools.scss";
 
-@import 'generic/generic.scss';
+@import "generic/generic.scss";
 
-@import 'elements/elements.scss';
+@import "elements/elements.scss";
 
-@import 'objects/objects.scss';
+@import "objects/objects.scss";
 
-@import 'components/components.scss';
+@import "components/components.scss";
 
-@import 'utilities/utilities.scss';
+@import "utilities/utilities.scss";
 
 body {
   margin: 0;
@@ -21,13 +21,12 @@ body {
   background: $bg-content-color;
 }
 
-
 @mixin root-prop($prop: null, $value: null) {
-	@if ($prop and $value) {
-		#{$prop}: $value;
-	}
+  @if ($prop and $value) {
+    #{$prop}: $value;
+  }
 }
 
 :root {
-	@include root-prop(--root-prop, #000000);
+  @include root-prop(--root-prop, #000000);
 }
