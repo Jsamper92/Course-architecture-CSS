@@ -1,8 +1,15 @@
+
+/// $grid: Variable donde se definen los parametros de la grid
+/// @group grid
+
 $grid: (
     col: 4,
     gutter:20px
 );
 
+
+/// $pattern-design: Variable que establece el patrón de escritura a la hora de generar la grid
+/// @group grid
 $pattern-design: (
   mobileFirst: false,
   desktopFirst: true,

@@ -21,6 +21,7 @@ body {
   background: $bg-content-color;
 }
 
+
 @mixin root-prop($prop: null, $value: null) {
   @if ($prop and $value) {
     #{$prop}: $value;

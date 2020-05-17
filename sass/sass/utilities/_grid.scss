@@ -1,4 +1,11 @@
 
+
+
+
+/// set-grid Mixin que genera una grid
+/// @param {type} $rule - Variable que define la regla de la media querie
+/// @group grid
+
 @mixin set-grid($rule) {
   $columns: map-get(
     $map: $grid,
@@ -20,6 +27,9 @@
   }
 }
 
+/// Mixin que define un patrón de escritura
+/// @content set-grid - Mixin que ejecuta un patron de escritura en base a una variable
+/// @group grid
 
 
 @mixin set-design() {
@@ -30,6 +40,5 @@
   }
 }
 
-@include set-design();
 
 

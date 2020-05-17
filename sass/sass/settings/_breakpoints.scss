@@ -1,3 +1,7 @@
+/// Mapa que define los puntos de ruptura
+/// @param {map} $breakpoints
+/// @group responsive
+
 $breakpoints: (
  sm:0,
  md: 768px,

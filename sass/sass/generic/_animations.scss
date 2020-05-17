@@ -1,4 +1,10 @@
-@mixin keyframes($animations) {
+/// set-keyframes - Mixin que crea todas las animaciones genericas
+/// @param {map} $animations - Recibe como parametro un mapa con todas las animaciones genericas
+/// @example
+///     @include set-keyframes($animations);
+/// @group animations
+
+@mixin set-keyframes($animations) {
     @each $animation,$content in $animations{
       @keyframes #{$animation} {
       @each $percentage, $value in $content {
@@ -12,4 +18,4 @@
     }
     }
   }
-  @include keyframes($animations);
+  @include set-keyframes($animations);

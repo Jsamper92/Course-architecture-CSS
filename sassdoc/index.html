@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Course-architecture-css - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Course-architecture-css - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Course to learn how create architecture ITCSS with BEM</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/Jsamper92/course-architecture-CSS#readme">Course-architecture-css - v1.0.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="animations"><a href="#animations">animations</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="animations-mixin"><a href="#animations-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="animations" data-name="set-keyframes" data-type="mixin"><a href="#animations-mixin-set-keyframes">set-keyframes</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="animations-variable"><a href="#animations-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="animations" data-name="animations" data-type="variable"><a href="#animations-variable-animations">animations</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="fonts"><a href="#fonts">fonts</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="fonts-mixin"><a href="#fonts-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="fonts" data-name="font-face" data-type="mixin"><a href="#fonts-mixin-font-face">font-face</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="fonts-variable"><a href="#fonts-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="fonts" data-name="font-path" data-type="variable"><a href="#fonts-variable-font-path">font-path</a></li><li class="sidebar__item sassdoc__item" data-group="fonts" data-name="font-default" data-type="variable"><a href="#fonts-variable-font-default">font-default</a></li><li class="sidebar__item sassdoc__item" data-group="fonts" data-name="fonts" data-type="variable"><a href="#fonts-variable-fonts">fonts</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="grid"><a href="#grid">grid</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="grid-variable"><a href="#grid-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="grid" data-name="grid" data-type="variable"><a href="#grid-variable-grid">grid</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name="pattern-design" data-type="variable"><a href="#grid-variable-pattern-design">pattern-design</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="grid-mixin"><a href="#grid-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="grid" data-name="set-grid" data-type="mixin"><a href="#grid-mixin-set-grid">set-grid</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name="set-design" data-type="mixin"><a href="#grid-mixin-set-design">set-design</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="icons"><a href="#icons">icons</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="icons-variable"><a href="#icons-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="icons" data-name="icons" data-type="variable"><a href="#icons-variable-icons">icons</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="responsive"><a href="#responsive">responsive</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="responsive-variable"><a href="#responsive-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="responsive" data-name="breakpoints" data-type="variable"><a href="#responsive-variable-breakpoints">breakpoints</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="responsive-mixin"><a href="#responsive-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="responsive" data-name="tablet" data-type="mixin"><a href="#responsive-mixin-tablet">tablet</a></li><li class="sidebar__item sassdoc__item" data-group="responsive" data-name="desktop" data-type="mixin"><a href="#responsive-mixin-desktop">desktop</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="spacing"><a href="#spacing">spacing</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="spacing-variable"><a href="#spacing-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="spacing" data-name="marginType" data-type="variable"><a href="#spacing-variable-marginType">marginType</a></li><li class="sidebar__item sassdoc__item" data-group="spacing" data-name="spacer-base" data-type="variable"><a href="#spacing-variable-spacer-base">spacer-base</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="animations"><div class="container">animations</div></h1><section class="main__sub-section" id="animations-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="animations-mixin-set-keyframes"><h3 class="item__heading"><a class="item__name" href="#mixin-set-keyframes">set-keyframes</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin set-keyframes($animations) { 
+    @each $animation,$content in $animations{
+      @keyframes #{$animation} {
+      @each $percentage, $value in $content {
+        $percent: quote($string: $percentage + &#39;%&#39;); 
+        #{$percent} {
+          @each $property,$content in $value{
+            #{$property}:$content
+          }
+        }
+      }
+    }
+    }
+   }" data-collapsed="@mixin set-keyframes($animations) { ... }"><code>@mixin set-keyframes($animations) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>set-keyframes - Mixin que crea todas las animaciones genericas</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$animations</code></th><td data-label="desc"><p>Recibe como parametro un mapa con todas las animaciones genericas</p></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include set-keyframes($animations);</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#animations-variable-animations"><code>animations</code></a></li></ul></section></section><section class="main__sub-section" id="animations-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="animations-variable-animations"><h3 class="item__heading"><a class="item__name" href="#variable-animations">animations</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$animations: (
+  animation-1:(
+    0:(
+      opacity:0,
+      transform:translateY(-100px)
+    ),
+    50:(
+       opacity:0.5,
+       transform:translateY(-50px)
+    ),
+    100:(
+      opacity:1,
+      transform:translateY(0px)
+    )
+  ),
+  animation-2:(
+    0:(
+      transform:scale(0)
+    ),
+    100:(
+      transform:scale(1)
+    )
+  )
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa donde definimos todas las animaciones genericas</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@keyframes animation-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes animation-2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#animations-mixin-set-keyframes"><code>set-keyframes</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="fonts"><div class="container">fonts</div></h1><section class="main__sub-section" id="fonts-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="fonts-mixin-font-face"><h3 class="item__heading"><a class="item__name" href="#mixin-font-face">font-face</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin font-face($name, $file, $weight: 500) { 
+  @font-face {
+    font-family: $name;
+    font-display: auto;
+    src: url($font-path + $file);
+    font-style: normal;
+    font-weight: $weight;
+  }
+ }" data-collapsed="@mixin font-face($name, $file, $weight: 500) { ... }"><code>@mixin font-face($name, $file, $weight: 500) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que crea una fuente de texto</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$name</code></th><td data-label="desc"><p>Nombre de la fuente de texto</p></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$file</code></th><td data-label="desc"><p>Nombre del archivo de la fuente</p></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$weight</code></th><td data-label="desc"><p>Grosor de la fuente</p></td><td data-label="type"><code>Any</code></td><td data-label="default"><code>500</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@font-face {
+  font-family: font-regular;
+  font-display: auto;
+  src: url(&quot;/sass/fonts/barlow-regular.ttf&quot;);
+  font-style: normal;
+  font-weight: 500;
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#fonts-variable-font-path"><code>font-path</code></a></li></ul></section></section><section class="main__sub-section" id="fonts-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="fonts-variable-font-path"><h3 class="item__heading"><a class="item__name" href="#variable-font-path">font-path</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-path: &#39;/sass/fonts/&#39;;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variable donde definimos la url de todas las fuentes</p></div><h3 class="item__sub-heading">Type</h3><p><code>String</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#fonts-mixin-font-face"><code>font-face</code></a></li></ul></section><section class="main__item container item" id="fonts-variable-font-default"><h3 class="item__heading"><a class="item__name" href="#variable-font-default">font-default</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-default: sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variable donde definimos la fuente por defecto</p></div><h3 class="item__sub-heading">Type</h3><p><code>String</code></p></section><section class="main__item container item" id="fonts-variable-fonts"><h3 class="item__heading"><a class="item__name" href="#variable-fonts">fonts</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$fonts: (
+    font-regular: &#39;barlow-regular.ttf&#39;,
+    font-italic: &#39;barlow-italic.ttf&#39;,
+    font-icomoon: &#39;icomoon.ttf&#39;  
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa donde insertamos el nombre de la fuente junto al nombre del archivo</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p></section></section></section><section class="main__section"><h1 class="main__heading" id="grid"><div class="container">grid</div></h1><section class="main__sub-section" id="grid-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="grid-variable-grid"><h3 class="item__heading"><a class="item__name" href="#variable-grid">grid</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$grid: (
+    col: 4,
+    gutter:20px
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>$grid: Variable donde se definen los parametros de la grid</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-grid"><code>set-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-grid"><code>set-grid</code></a></li></ul></section><section class="main__item container item" id="grid-variable-pattern-design"><h3 class="item__heading"><a class="item__name" href="#variable-pattern-design">pattern-design</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$pattern-design: (
+  mobileFirst: false,
+  desktopFirst: true,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>$pattern-design: Variable que establece el patrón de escritura a la hora de generar la grid</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-design"><code>set-design</code></a></li></ul></section></section><section class="main__sub-section" id="grid-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="grid-mixin-set-grid"><h3 class="item__heading"><a class="item__name" href="#mixin-set-grid">set-grid</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin set-grid($rule) { 
+  $columns: map-get(
+    $map: $grid,
+    $key: &quot;col&quot;,
+  );
+  @each $breakpoint, $break in $breakpoints {
+    @media only screen and ($rule: $break) {
+      @for $i from 1 through $columns {
+        $valor: unquote((100 / $columns * $i) + &quot;%&quot;);
+        .col-#{$breakpoint}-#{$i} {
+          box-sizing: border-box;
+          padding: 0 map-get($map: $grid, $key: &quot;gutter&quot;);
+          flex: 0 0 $valor;
+          min-width: $valor;
+          max-width: $valor;
+        }
+      }
+    }
+  }
+ }" data-collapsed="@mixin set-grid($rule) { ... }"><code>@mixin set-grid($rule) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>set-grid Mixin que genera una grid</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$rule</code></th><td data-label="desc"><p>Variable que define la regla de la media querie</p></td><td data-label="type"><code>Type</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#grid-variable-grid"><code>grid</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#responsive-variable-breakpoints"><code>breakpoints</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#grid-variable-grid"><code>grid</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-design"><code>set-design</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-design"><code>set-design</code></a></li></ul></section><section class="main__item container item" id="grid-mixin-set-design"><h3 class="item__heading"><a class="item__name" href="#mixin-set-design">set-design</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin set-design() { 
+  @if map-get($map: $pattern-design, $key: mobileFirst) == true {
+    @include set-grid(min-width);
+  } @else {
+    @include set-grid(max-width);
+  }
+ }" data-collapsed="@mixin set-design() { ... }"><code>@mixin set-design() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que define un patrón de escritura</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-grid"><code>set-grid</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-grid"><code>set-grid</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#grid-variable-pattern-design"><code>pattern-design</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="icons"><div class="container">icons</div></h1><section class="main__sub-section" id="icons-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="icons-variable-icons"><h3 class="item__heading"><a class="item__name" href="#variable-icons">icons</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$icons: (
+  first-page: &quot;\e92d&quot;,
+  last-page: &quot;\e92e&quot;,
+  button-success: &quot;\e92c&quot;,
+  table-options: &quot;\e92b&quot;,
+  mouse-square: &quot;\e928&quot;,
+  mouse-circle: &quot;\e929&quot;,
+  responsive-table: &quot;\e92a&quot;,
+  arrow-down: &quot;\e916&quot;
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa donde se alojan todos los iconos del proyecto desde una fuente icónica, de esta manera cada vez que queramos añadir un nuevo icono, simplemente tendremos que importar la nueva fuente, y el nombre del icono con su respectivo valor.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.icon-first-page::before {
+   content: &quot;\e92d&quot;;
+}</code></pre></div></section></section></section><section class="main__section"><h1 class="main__heading" id="responsive"><div class="container">responsive</div></h1><section class="main__sub-section" id="responsive-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="responsive-variable-breakpoints"><h3 class="item__heading"><a class="item__name" href="#variable-breakpoints">breakpoints</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoints: (
+ sm:0,
+ md: 768px,
+ lg: 1200px,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa que define los puntos de ruptura</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#grid-mixin-set-grid"><code>set-grid</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#responsive-mixin-tablet"><code>tablet</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#responsive-mixin-desktop"><code>desktop</code></a></li></ul></section></section><section class="main__sub-section" id="responsive-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="responsive-mixin-tablet"><h3 class="item__heading"><a class="item__name" href="#mixin-tablet">tablet</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin tablet() { 
+    @media only screen and (min-width: map-get($map: $breakpoints, $key: &quot;md&quot;)) {
+      @content;
+    }
+   }" data-collapsed="@mixin tablet() { ... }"><code>@mixin tablet() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que controla el punto de ruptura en versión tablet</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#responsive-variable-breakpoints"><code>breakpoints</code></a></li></ul></section><section class="main__item container item" id="responsive-mixin-desktop"><h3 class="item__heading"><a class="item__name" href="#mixin-desktop">desktop</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin desktop() { 
+    @media only screen and (min-width: map-get($map: $breakpoints, $key: &quot;lg&quot;)) {
+      @content;
+    }
+   }" data-collapsed="@mixin desktop() { ... }"><code>@mixin desktop() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin que controla el punto de ruptura en versión desktop</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#responsive-variable-breakpoints"><code>breakpoints</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="spacing"><div class="container">spacing</div></h1><section class="main__sub-section" id="spacing-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="spacing-variable-marginType"><h3 class="item__heading"><a class="item__name" href="#variable-marginType">marginType</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$marginType: (
+	mt: margin-top,
+	mb: margin-bottom,
+	ml: margin-left,
+	mr: margin-right,
+	pt: padding-top,
+	pb: padding-bottom,
+	pl: padding-left,
+	pr: padding-right
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>$marginType Mapa donde alojamos todas las opciones de margin y padding teniendo en cuenta los puntos de corte</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@media (min-width: 0px) {
+ .mt-sm-1 {
+margin-top: 5px;
+  }
+ }...
+@media (min-width: 768px) {
+ .mt-md-1 {
+margin-top: 5px;
+  }
+ }...
+@media (min-width: 1200px) {
+ .mt-lg-1 {
+margin-top: 5px;
+  }
+ }...</code></pre></div></section><section class="main__item container item" id="spacing-variable-spacer-base"><h3 class="item__heading"><a class="item__name" href="#variable-spacer-base">spacer-base</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$spacer-base: 5;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>$space-base Variable que define el valor exponencial de un margen al anterior</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <a class="project-info__name" href="https://github.com/Jsamper92/course-architecture-CSS#readme">Course-architecture-css</a><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

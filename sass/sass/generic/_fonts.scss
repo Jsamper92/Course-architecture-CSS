@@ -5,6 +5,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/// Mixin que crea una fuente de texto
+/// @param {any} $name - Nombre de la fuente de texto
+/// @param {any} $file - Nombre del archivo de la fuente
+/// @param {any} $weight [500] - Grosor de la fuente
+/// @example 
+///   @font-face {
+///     font-family: font-regular;
+///     font-display: auto;
+///     src: url("/sass/fonts/barlow-regular.ttf");
+///     font-style: normal;
+///     font-weight: 500;
+///   }
+/// @group fonts
+
 @mixin font-face($name, $file, $weight:500) {
   @font-face {
     font-family: $name;

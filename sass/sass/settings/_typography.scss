@@ -1,12 +1,28 @@
+
+
+/// Variable donde definimos la url de todas las fuentes
+/// @type string
+/// @group fonts
+
 $font-path: '/sass/fonts/';
 
+/// Variable donde definimos la fuente por defecto
+/// @type string
+/// @group fonts
+
 $font-default: sans-serif;
+
+/// Mapa donde insertamos el nombre de la fuente junto al nombre del archivo
+/// @type map
+/// @group fonts
 
 $fonts:(
     font-regular: 'barlow-regular.ttf',
     font-italic: 'barlow-italic.ttf',
     font-icomoon: 'icomoon.ttf'  
 );
+
+
 
 $font-family-heading: font-regular;
 
