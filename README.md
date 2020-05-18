@@ -140,3 +140,7 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
 1. Crea un botón dentro del Shadow DOM
 2. Insertale la misma clase que el botón que tenemos en el proyecto con estilos distintos
 3. Aplicale un evento click que devuelva por medio de un alert el nombre de la clase del elemento padre
+
+
+### Añadido
+- Documentación generada en base a la libreria [sassdoc](http://sassdoc.com/), para visualizar simplemente hay que ir a la ruta `/sassdoc/`
