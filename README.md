@@ -143,4 +143,4 @@ Con las clases CSS bajo la nomenclatura BEM, es momento de crear una estructura 
 
 
 ### Añadido
-- Documentación generada en base a la libreria [sassdoc](http://sassdoc.com/), para visualizar simplemente hay que ir a la ruta `/sassdoc/`
+- Documentación generada en base a la libreria [sassdoc](http://sassdoc.com/), para visualizar simplemente hay que ir a la ruta `/sassdoc/` después de lanzar el script `npm run sassdoc`
